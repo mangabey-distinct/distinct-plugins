@@ -1,0 +1,19 @@
+{
+    "name": "distinct-plugins",
+    "owner": {
+        "name": "Mangabey AB",
+        "email": "contact@mangabey.se"
+    },
+    "metadata": {
+        "description": "<TODO: Add description>",
+        "version": "0.1.0",
+        "pluginRoot": "plugins"
+    },
+    "plugins": [
+        {
+            "name": "distinct",
+            "source": "distinct",
+            "description": "<TODO: Add description>"
+        }
+    ]
+}

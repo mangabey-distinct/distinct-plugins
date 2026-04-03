@@ -1,0 +1,27 @@
+{
+    "name": "distinct",
+    "version": "0.0.1",
+    "description": "<TODO: Add description>",
+    "author": {
+        "name": "Distinct",
+        "email": "contact@mangabey.se",
+        "url": "https://distinct.mangabey.se"
+    },
+    "homepage": "https://distinct.mangabey.se",
+    "repository": "https://github.com/mangabey-distinct/plugins",
+    "license": "Apache-2.0",
+    "keywords": [
+        "distinct",
+        "data",
+        "sql",
+        "analytics",
+        "mcp",
+        "dashboard"
+    ],
+    "skills": "./skills/",
+    "mcpServers": {
+        "Distinct": {
+            "url": "https://dev.distinct.mangabey.se/mcp"
+        }
+    }
+}

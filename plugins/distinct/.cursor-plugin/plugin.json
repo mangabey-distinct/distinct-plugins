@@ -1,0 +1,35 @@
+{
+    "name": "distinct",
+    "displayName": "Distinct",
+    "description": "<TODO: Add description>",
+    "version": "0.0.1",
+    "author": {
+        "name": "Distinct",
+        "email": "contact@mangabey.se"
+    },
+    "publisher": "Mangabey AB",
+    "homepage": "https://distinct.mangabey.se",
+    "repository": "https://github.com/mangabey-distinct/plugins",
+    "license": "Apache-2.0",
+    "logo": "assets/logo.svg",
+    "keywords": [
+        "distinct",
+        "data",
+        "sql",
+        "analytics",
+        "mcp",
+        "dashboard"
+    ],
+    "category": "data-analytics",
+    "tags": [
+        "mcp",
+        "skills",
+        "business-intelligence"
+    ],
+    "skills": "./skills/",
+    "mcpServers": {
+        "Distinct": {
+            "url": "https://dev.distinct.mangabey.se/mcp"
+        }
+    }
+}
