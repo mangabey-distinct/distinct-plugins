@@ -1,6 +1,6 @@
 {
     "name": "distinct",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Query BigQuery with maximum context and control.",
     "author": {
         "name": "Mangabey AB",
