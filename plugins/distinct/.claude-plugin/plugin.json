@@ -18,7 +18,7 @@
         "mcp",
         "dashboard"
     ],
-    "skills": "./skills/",
+    "skills": "./skills-claude/",
     "mcpServers": {
         "Distinct": {
             "url": "https://dev.distinct.mangabey.se/mcp"

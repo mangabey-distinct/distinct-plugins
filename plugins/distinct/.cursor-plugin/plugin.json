@@ -26,7 +26,7 @@
         "skills",
         "business-intelligence"
     ],
-    "skills": "./skills/",
+    "skills": "./skills-cursor/",
     "mcpServers": {
         "Distinct": {
             "url": "https://dev.distinct.mangabey.se/mcp"
