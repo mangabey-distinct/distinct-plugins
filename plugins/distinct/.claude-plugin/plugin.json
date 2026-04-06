@@ -1,6 +1,6 @@
 {
     "name": "distinct",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Distinct is a data analytics platform that allows you to query your data using natural language.",
     "author": {
         "name": "Distinct",
