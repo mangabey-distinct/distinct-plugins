@@ -1,14 +1,14 @@
 {
     "name": "distinct",
     "displayName": "Distinct",
-    "description": "<TODO: Add description>",
+    "description": "Distinct is a data analytics platform that allows you to query your data using natural language.",
     "version": "0.0.2",
     "author": {
         "name": "Distinct",
         "email": "contact@mangabey.se"
     },
     "publisher": "Mangabey AB",
-    "homepage": "https://distinct.mangabey.se",
+    "homepage": "https://distinct.sh",
     "repository": "https://github.com/mangabey-distinct/distinct-plugins",
     "license": "Apache-2.0",
     "logo": "assets/logo.svg",
@@ -29,7 +29,7 @@
     "skills": "./skills-cursor/",
     "mcpServers": {
         "Distinct": {
-            "url": "https://dev.distinct.mangabey.se/mcp"
+            "url": "https://distinct.sh/mcp"
         }
     }
 }
