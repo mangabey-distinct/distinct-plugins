@@ -1,13 +1,13 @@
 {
     "name": "distinct",
     "version": "0.0.2",
-    "description": "<TODO: Add description>",
+    "description": "Query BigQuery with maximum context and control.",
     "author": {
-        "name": "Distinct",
+        "name": "Mangabey AB",
         "email": "contact@mangabey.se",
-        "url": "https://distinct.mangabey.se"
+        "url": "https://distinct.sh"
     },
-    "homepage": "https://distinct.mangabey.se",
+    "homepage": "https://distinct.sh",
     "repository": "https://github.com/mangabey-distinct/distinct-plugins",
     "license": "Apache-2.0",
     "keywords": [
@@ -21,7 +21,7 @@
     "skills": "./skills-claude/",
     "mcpServers": {
         "Distinct": {
-            "url": "https://dev.distinct.mangabey.se/mcp"
+            "url": "https://distinct.sh/mcp"
         }
     }
 }
