@@ -5,14 +5,14 @@
         "email": "contact@mangabey.se"
     },
     "metadata": {
-        "description": "Distinct is a data analytics platform that allows you to query your data using natural language.",
+        "description": "Query BigQuery with maximum context and control.",
         "version": "0.0.3"
     },
     "plugins": [
         {
             "name": "distinct",
             "source": "./plugins/distinct",
-            "description": "Distinct is a data analytics platform that allows you to query your data using natural language."
+            "description": "Query BigQuery with maximum context and control."
         }
     ]
 }
