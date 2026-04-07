@@ -11,7 +11,7 @@
     "homepage": "https://distinct.sh",
     "repository": "https://github.com/mangabey-distinct/distinct-plugins",
     "license": "Apache-2.0",
-    "logo": "plugins/distinct/assets/LOGO_DARK_FLAT.png",
+    "logo": "assets/LOGO_DARK_FLAT.png",
     "keywords": [
         "distinct",
         "data",
