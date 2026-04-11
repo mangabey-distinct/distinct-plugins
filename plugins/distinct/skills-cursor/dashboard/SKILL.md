@@ -83,7 +83,7 @@ The dashboard uses a **12-column grid**. Plan which charts go where using `col_s
 
 Construct a `DashboardDefinition` JSON object with these sections:
 
-- **`id`**: A URL-safe slug (e.g., `"sales-overview"`)
+- **`id`**: For a **new** dashboard, call `allocate_dashboard_id` first and use the returned `dashboard_id` (short lowercase slug plus a random suffix). For **updates**, keep the `id` from `read_dashboard`. Do not invent ids.
 - **`title`**: Human-readable dashboard title
 - **`parameters`** (optional): Runtime filters the user can change in the UI. Parameters are injected into queries and transforms using `{{param_name}}` syntax.
 - **`queries`**: Map of query IDs to SQL. Queries can reference parameters with `{{param_name}}`. Each query runs against the data warehouse and produces a table of results.
@@ -91,12 +91,13 @@ Construct a `DashboardDefinition` JSON object with these sections:
 - **`ui_elements`**: List of UI element definitions (charts, tables, KPIs). Each element references a query or transform as its `data_source`. Chart elements have `type`, `x`, and `y`. Table elements have `type: "table"` and optional `y` for column selection. KPI elements have `type: "kpi"`, `column`, optional `aggregate` (sum, avg, min, max, mode, or none), and optional `description` (~max 10 words). If `aggregate` is none or omitted, the source data must have exactly 1 row.
 - **`layout`**: Grid placement for each element using `element_id`, `col_start` (1-12), and `col_span` (1-12).
 
-Then call `write_dashboard` to save it.
+For a **new** dashboard, call `allocate_dashboard_id` with the same title you will use in the definition, then call `write_dashboard` with that `dashboard_id` as `id`.
 
-If you are **updating** an existing dashboard, always call `read_dashboard` first to get the current state and preserve any elements you are not changing.
+If you are **updating** an existing dashboard, always call `read_dashboard` first to get the current state and preserve any elements you are not changing (reuse the existing `id`; do not call `allocate_dashboard_id`).
 
 #### Relevant tools
 
+- `allocate_dashboard_id` -- required once before creating a new dashboard; returns `dashboard_id`
 - `write_dashboard` -- saves the dashboard and returns a URL
 - `read_dashboard` -- read before modifying an existing dashboard
 - `list_dashboards` -- lists the dashboards the user has access to edit
